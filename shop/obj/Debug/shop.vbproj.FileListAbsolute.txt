@@ -5,7 +5,6 @@ C:\Users\hp\Desktop\shop\shop\bin\Debug\shop.xml
 C:\Users\hp\Desktop\shop\shop\bin\Debug\Guna.UI2.dll
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.vbproj.AssemblyReference.cache
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Form1.resources
-C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Login.resources
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Resources.resources
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.vbproj.GenerateResource.cache
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.vbproj.CoreCompileInputs.cache
@@ -81,5 +80,5 @@ C:\Users\hp\Desktop\shop\shop\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\Users\hp\Desktop\shop\shop\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Client.resources
 C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Products.resources
-C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Billing.resources
-C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.commande.resources
+C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.FACTURATION.resources
+C:\Users\hp\Desktop\shop\shop\obj\Debug\shop.Utilisateure.resources

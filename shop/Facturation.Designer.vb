@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Billing
+Partial Class FACTURATION
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -23,7 +23,7 @@ Partial Class Billing
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Billing))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FACTURATION))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BillDGV = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -78,6 +78,7 @@ Partial Class Billing
         Me.LoginformDataSet8 = New shop.loginformDataSet8()
         Me.FacturationTableAdapter = New shop.loginformDataSet9TableAdapters.FacturationTableAdapter()
         Me.FacturationTableAdapter1 = New shop.loginformDataSet12TableAdapters.FacturationTableAdapter()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.BillDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturationBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -405,9 +406,9 @@ Partial Class Billing
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(9, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(181, 23)
+        Me.Label3.Size = New System.Drawing.Size(83, 23)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Nom des produits"
+        Me.Label3.Text = " Produit"
         '
         'TextBox1
         '
@@ -433,9 +434,9 @@ Partial Class Billing
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(6, 107)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(165, 23)
+        Me.Label5.Size = New System.Drawing.Size(66, 23)
         Me.Label5.TabIndex = 15
-        Me.Label5.Text = "Nom des clients"
+        Me.Label5.Text = "Client"
         '
         'TextBox3
         '
@@ -618,7 +619,10 @@ Partial Class Billing
         '
         Me.FacturationTableAdapter1.ClearBeforeFill = True
         '
-        'Billing
+        'Timer1
+        '
+        '
+        'FACTURATION
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -628,8 +632,8 @@ Partial Class Billing
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Billing"
-        Me.Text = "Billing"
+        Me.Name = "FACTURATION"
+        Me.Text = "FACTURATION"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.BillDGV, System.ComponentModel.ISupportInitialize).EndInit()
@@ -709,4 +713,5 @@ Partial Class Billing
     Friend WithEvents PrixDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents QuantitéDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents TotalDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Timer1 As Timer
 End Class

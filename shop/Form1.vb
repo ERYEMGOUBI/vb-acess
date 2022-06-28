@@ -10,7 +10,7 @@
         Label2.Text = percentage + " % "
         If MyProgress.Value = 100 Then
             Me.Hide()
-            Dim log = New Login
+            Dim log = New Utilisateure
             log.Show()
             Timer1.Enabled = False
         End If

@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
-Public Class Billing
+Public Class FACTURATION
     Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\hp\Desktop\shop\loginform.mdb")
     Private Sub displayProducts()
         con.Open()
@@ -51,7 +51,7 @@ Public Class Billing
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Dim log = New Login
+        Dim log = New Utilisateure
         log.Show()
         Me.Hide()
     End Sub
@@ -95,46 +95,52 @@ Public Class Billing
 
 
     End Sub
-    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
-        If TextBox2.Text = "" Then
-            MsgBox("Vous devez entrer la quantité!!! ")
-        ElseIf TextBox4.Text = " " Then
-            MsgBox("Vous devez entrer le prix !!!")
+    Sub save()
+        Try
+            con.Open()
+            For j As Integer = 0 To BillDGV.Rows.Count - 1 Step +1
+                Dim cmd As New OleDb.OleDbCommand("Insert into Facturation (`Produit`,`Prix`,`Quantité`,`Total`) values(@produit,@Prix,@Quantité,@sum)", con)
+                cmd.Parameters.Clear()
 
-        Else
+                cmd.Parameters.AddWithValue("@produit", BillDGV.Rows(j).Cells(1).Value.ToString)
+                cmd.Parameters.AddWithValue("@Prix", BillDGV.Rows(j).Cells(4).Value.ToString)
+                cmd.Parameters.AddWithValue("@Quantité", CDec(BillDGV.Rows(j).Cells(2).Value.ToString))
 
+                cmd.Parameters.AddWithValue("@sum", Label8.Text)
 
-            Dim runm As Integer = BillDGV.Rows.Add()
-            i = i + 1
-            Dim total = Convert.ToInt32(TextBox2.Text) * Convert.ToInt32(TextBox4.Text)
-            BillDGV.Rows.Item(runm).Cells("coulmn1").Value = i
-            BillDGV.Rows.Item(runm).Cells("coulmn2").Value = TextBox1.Text
-            BillDGV.Rows.Item(runm).Cells("coulmn3").Value = TextBox4.Text
-            BillDGV.Rows.Item(runm).Cells("coulmn4").Value = TextBox2.Text
-            BillDGV.Rows.Item(runm).Cells("coulmn5").Value = total
-            Grdtot = Grdtot + total
-            Dim tot As String
-            tot = "sold " + Convert.ToString(Grdtot)
-            Label8.Text = tot
+                i = cmd.ExecuteNonQuery
+            Next
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        con.Close()
 
+        clear()
 
-            reset()
-        update()
-
-
-        End If
 
     End Sub
-    Sub reset()
+    Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
+        save
+    End Sub
+    Sub clear()
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox4.Text = ""
-        key = 0
-        cltkey = 0
+        Label8.Text = "000.00"
+
 
     End Sub
     Dim i = 0, Grdtot = 0
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim i As Decimal
+        Dim sum As Decimal = 0
+        For i = 0 To BillDGV.Rows.Count - 1
+            sum += BillDGV.Rows(i).Cells(2).Value * BillDGV.Rows(i).Cells(4).Value
+        Next
+        Label8.Text = CDec(sum)
+    End Sub
 
     Dim cltkey = 0
     Private Sub update()

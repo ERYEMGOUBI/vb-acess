@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Products
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Products
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Products))
@@ -70,8 +70,6 @@ Partial Class Products
         Me.LoginformDataSet5 = New shop.loginformDataSet5()
         Me.ProduitBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProduitTableAdapter3 = New shop.loginformDataSet5TableAdapters.ProduitTableAdapter()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,14 +86,11 @@ Partial Class Products
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginformDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProduitBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.TextBox2)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -413,7 +408,7 @@ Partial Class Products
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(448, 25)
+        Me.Label1.Location = New System.Drawing.Point(503, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 23)
         Me.Label1.TabIndex = 14
@@ -423,7 +418,7 @@ Partial Class Products
         '
         Me.Panel2.BackColor = System.Drawing.Color.PaleVioletRed
         Me.Panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(452, 51)
+        Me.Panel2.Location = New System.Drawing.Point(507, 52)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(81, 7)
         Me.Panel2.TabIndex = 13
@@ -431,7 +426,7 @@ Partial Class Products
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(571, -1)
+        Me.PictureBox5.Location = New System.Drawing.Point(626, 0)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -462,7 +457,7 @@ Partial Class Products
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(487, 77)
+        Me.PictureBox3.Location = New System.Drawing.Point(542, 78)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(108, 51)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -491,7 +486,7 @@ Partial Class Products
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(679, 25)
+        Me.Label2.Location = New System.Drawing.Point(734, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 23)
         Me.Label2.TabIndex = 5
@@ -500,7 +495,7 @@ Partial Class Products
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(331, -1)
+        Me.PictureBox2.Location = New System.Drawing.Point(386, 0)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -563,26 +558,6 @@ Partial Class Products
         '
         Me.ProduitTableAdapter3.ClearBeforeFill = True
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(763, -1)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(102, 72)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 43
-        Me.PictureBox7.TabStop = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(871, 25)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(130, 23)
-        Me.Label10.TabIndex = 42
-        Me.Label10.Text = "Commande"
-        '
         'Products
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
@@ -612,7 +587,6 @@ Partial Class Products
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LoginformDataSet5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProduitBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -663,6 +637,4 @@ Partial Class Products
     Friend WithEvents LoginformDataSet5 As loginformDataSet5
     Friend WithEvents ProduitBindingSource3 As BindingSource
     Friend WithEvents ProduitTableAdapter3 As loginformDataSet5TableAdapters.ProduitTableAdapter
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label10 As Label
 End Class

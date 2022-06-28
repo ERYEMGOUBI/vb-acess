@@ -17,7 +17,7 @@ Public Class Products
     Dim dr1 As DataRow
     Dim Poss As Integer
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Dim log = New Login
+        Dim log = New Utilisateure
         log.Show()
         Me.Hide()
     End Sub

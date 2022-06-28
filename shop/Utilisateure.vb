@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Configuration
-Public Class Login
+Public Class Utilisateure
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
         If TextBox1.Text = "" Or TextBox2.Text = "" Then
             MessageBox.Show("Veuillez entrer le champ obligatoire", "Erreur d'authentification", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -9,7 +9,7 @@ Public Class Login
             conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\hp\Desktop\shop\loginform.mdb"
 
             Try
-                Dim sql As String = "SELECT * FROM member WHERE USERNAME ='" & TextBox1.Text & "' AND PASSWORD ='" & TextBox2.Text & "'"
+                Dim sql As String = "SELECT * FROM Utilisateur WHERE USERNAME ='" & TextBox1.Text & "' AND PASSWORD ='" & TextBox2.Text & "'"
                 Dim sqlCom As New System.Data.OleDb.OleDbCommand(sql)
 
                 sqlCom.Connection = conn
@@ -38,7 +38,7 @@ Public Class Login
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-        Dim bill = New Billing
+        Dim bill = New FACTURATION
         bill.Show()
         Me.Hide()
     End Sub

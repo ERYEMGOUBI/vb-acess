@@ -18,7 +18,7 @@ Public Class Client
     Dim dr1 As DataRow
     Dim Poss As Integer
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Dim log = New Login
+        Dim log = New Utilisateure
         log.Show()
         Me.Hide()
     End Sub
@@ -223,5 +223,7 @@ Public Class Client
         Me.Hide()
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+    End Sub
 End Class

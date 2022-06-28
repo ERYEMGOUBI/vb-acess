@@ -178,22 +178,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Billing.Designer.vb">
-      <DependentUpon>Billing.vb</DependentUpon>
+    <Compile Include="Facturation.Designer.vb">
+      <DependentUpon>Facturation.vb</DependentUpon>
     </Compile>
-    <Compile Include="Billing.vb">
+    <Compile Include="Facturation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Client.Designer.vb">
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
     <Compile Include="Client.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="commande.Designer.vb">
-      <DependentUpon>commande.vb</DependentUpon>
-    </Compile>
-    <Compile Include="commande.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -203,10 +197,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="Utilisateure.Designer.vb">
+      <DependentUpon>Utilisateure.vb</DependentUpon>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Utilisateure.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="loginformDataSet.Designer.vb">
@@ -298,20 +292,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Billing.resx">
-      <DependentUpon>Billing.vb</DependentUpon>
+    <EmbeddedResource Include="Facturation.resx">
+      <DependentUpon>Facturation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="commande.resx">
-      <DependentUpon>commande.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="Utilisateure.resx">
+      <DependentUpon>Utilisateure.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
