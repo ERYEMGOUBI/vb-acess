@@ -58,7 +58,7 @@ Partial Class Utilisateure
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(22, 13)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1156, 622)
+        Me.Panel1.Size = New System.Drawing.Size(1713, 837)
         Me.Panel1.TabIndex = 0
         '
         'BunifuThinButton21
@@ -79,7 +79,7 @@ Partial Class Utilisateure
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(458, 395)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(714, 460)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(7)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(267, 49)
@@ -91,7 +91,7 @@ Partial Class Utilisateure
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 16.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(375, 470)
+        Me.Label4.Location = New System.Drawing.Point(684, 528)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(441, 34)
         Me.Label4.TabIndex = 10
@@ -100,7 +100,7 @@ Partial Class Utilisateure
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(785, 335)
+        Me.PictureBox4.Location = New System.Drawing.Point(1041, 400)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(54, 32)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -110,7 +110,7 @@ Partial Class Utilisateure
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(785, 264)
+        Me.PictureBox3.Location = New System.Drawing.Point(1041, 329)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(54, 32)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -119,7 +119,7 @@ Partial Class Utilisateure
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(434, 335)
+        Me.TextBox2.Location = New System.Drawing.Point(690, 400)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(345, 32)
@@ -127,7 +127,7 @@ Partial Class Utilisateure
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(434, 264)
+        Me.TextBox1.Location = New System.Drawing.Point(690, 329)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(345, 32)
         Me.TextBox1.TabIndex = 7
@@ -136,7 +136,7 @@ Partial Class Utilisateure
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(246, 335)
+        Me.Label3.Location = New System.Drawing.Point(502, 400)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(143, 23)
         Me.Label3.TabIndex = 6
@@ -146,7 +146,7 @@ Partial Class Utilisateure
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(246, 267)
+        Me.Label2.Location = New System.Drawing.Point(502, 332)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(171, 23)
         Me.Label2.TabIndex = 5
@@ -155,7 +155,7 @@ Partial Class Utilisateure
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(539, 146)
+        Me.PictureBox2.Location = New System.Drawing.Point(795, 211)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(120, 91)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -167,7 +167,7 @@ Partial Class Utilisateure
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Chiller", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(374, 22)
+        Me.Label1.Location = New System.Drawing.Point(653, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(465, 139)
         Me.Label1.TabIndex = 3
@@ -176,25 +176,26 @@ Partial Class Utilisateure
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1118, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(1675, -1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(38, 33)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Login
+        'Utilisateure
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Pink
-        Me.ClientSize = New System.Drawing.Size(1200, 647)
+        Me.ClientSize = New System.Drawing.Size(1761, 809)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Login"
+        Me.Name = "Utilisateure"
         Me.Text = "Login"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,5 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
+Imports CrystalDecisions.CrystalReports.Engine
 Public Class FACTURATION
     Dim con As OleDbConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\hp\Desktop\shop\loginform.mdb")
     Private Sub displayProducts()
@@ -18,6 +19,7 @@ Public Class FACTURATION
         Dim dr1 As DataRow
         Dim Poss As Integer
         ds = New DataSet
+
 
         con.Close()
     End Sub
@@ -40,10 +42,6 @@ Public Class FACTURATION
         con.Close()
 
     End Sub
-
-
-
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Application.Exit()
 
@@ -56,8 +54,7 @@ Public Class FACTURATION
         Me.Hide()
     End Sub
     Private Sub Billing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: cette ligne de code charge les données dans la table 'LoginformDataSet12.Facturation'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-        Me.FacturationTableAdapter1.Fill(Me.LoginformDataSet12.Facturation)
+
         displayClient()
         displayProducts()
     End Sub
@@ -70,54 +67,49 @@ Public Class FACTURATION
         TextBox3.Text = CltDGV.CurrentRow.Cells(1).Value
     End Sub
     Dim key = 0, stock = 0
+    Dim dr As OleDbDataReader
+    Dim Poss As Integer
     Private Sub ProduitDGV_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ProduitDGV.CellContentClick
         TextBox1.Text = ProduitDGV.CurrentRow.Cells(1).Value
         TextBox4.Text = ProduitDGV.CurrentRow.Cells(4).Value
 
     End Sub
-    Dim dr As OleDbDataReader
-    Sub loadingDatagridView()
-        Try
-            BillDGV.Rows.Clear()
-            con.Open()
-            Dim cmd As New OleDb.OleDbCommand("Select * from Facturation", con)
-            dr = cmd.ExecuteReader
-            While dr.Read
-                BillDGV.Rows.Add(dr.Item("ID"), dr.Item("Produit"), dr.Item("Prix"), dr.Item("quantité"), dr.Item("Total"))
-
-            End While
-            dr.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-        con.Close()
 
 
-    End Sub
+    Dim N1, N2, somme As Double
+
     Sub save()
         Try
+            N1 = Val(TextBox2.Text)
+            N2 = Val(TextBox4.Text)
+            somme = N1 * N2
+            TextBox5.Text = somme
+
+
+
             con.Open()
-            For j As Integer = 0 To BillDGV.Rows.Count - 1 Step +1
-                Dim cmd As New OleDb.OleDbCommand("Insert into Facturation (`Produit`,`Prix`,`Quantité`,`Total`) values(@produit,@Prix,@Quantité,@sum)", con)
-                cmd.Parameters.Clear()
+            Dim cmd As New OleDb.OleDbCommand("Insert into Facturation (`Produit`,`Prix`,`Quantité`,`Total`) values(@Produit,@Prix,@Quantité,@Total)", con)
+            cmd.Parameters.Clear()
+                cmd.Parameters.AddWithValue("@Produit", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@Prix", TextBox4.Text)
+            cmd.Parameters.AddWithValue("@Quantité`", TextBox2.Text)
+            cmd.Parameters.AddWithValue("@Total`", TextBox5.Text)
 
-                cmd.Parameters.AddWithValue("@produit", BillDGV.Rows(j).Cells(1).Value.ToString)
-                cmd.Parameters.AddWithValue("@Prix", BillDGV.Rows(j).Cells(4).Value.ToString)
-                cmd.Parameters.AddWithValue("@Quantité", CDec(BillDGV.Rows(j).Cells(2).Value.ToString))
+                Poss = cmd.ExecuteNonQuery
+                If Poss > 0 Then
+                    MsgBox("Enregistrer la sauvegarde réussie !", vbInformation)
+                Else
+                    MsgBox("Manqué!!", vbCritical)
+                End If
 
-                cmd.Parameters.AddWithValue("@sum", Label8.Text)
-
-                i = cmd.ExecuteNonQuery
-            Next
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
         con.Close()
 
         clear()
-
-
+        updat()
     End Sub
     Private Sub BunifuThinButton21_Click(sender As Object, e As EventArgs) Handles BunifuThinButton21.Click
         save
@@ -125,25 +117,41 @@ Public Class FACTURATION
     Sub clear()
         TextBox1.Text = ""
         TextBox2.Text = ""
-        TextBox3.Text = ""
+
         TextBox4.Text = ""
-        Label8.Text = "000.00"
-
-
+        TextBox5.Text = "000.00"
     End Sub
-    Dim i = 0, Grdtot = 0
+    Sub loadReport()
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim i As Decimal
-        Dim sum As Decimal = 0
-        For i = 0 To BillDGV.Rows.Count - 1
-            sum += BillDGV.Rows(i).Cells(2).Value * BillDGV.Rows(i).Cells(4).Value
-        Next
-        Label8.Text = CDec(sum)
+        Try
+            con.Open()
+            Dim ds As New DataSet
+            Dim da As New OleDb.OleDbDataAdapter
+
+            da.SelectCommand = New OleDbCommand("select * from Facturation", con)
+            da.SelectCommand.Parameters.Clear()
+            da.Fill(ds, "DataTable")
+
+            Dim rpt As New CrystalReport3
+            rpt.Load(Application.StartupPath & "C:\Users\hp\Desktop\shop\shop\CrystalReport3.rpt")
+            rpt.SetDataSource(ds.Tables("DataTable"))
+
+            CrystalReportViewer1.ReportSource = rpt
+            CrystalReportViewer1.RefreshReport()
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        con.Close()
     End Sub
+    Private Sub BunifuThinButton24_Click(sender As Object, e As EventArgs) Handles BunifuThinButton24.Click
+        loadReport()
+    End Sub
+
 
     Dim cltkey = 0
-    Private Sub update()
+    Private Sub updat()
         Try
             Dim newqty = stock - Convert.ToInt32(TextBox2.Text)
             con.Open()

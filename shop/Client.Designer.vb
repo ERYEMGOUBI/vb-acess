@@ -25,8 +25,6 @@ Partial Class Client
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Client))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.ClientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LoginformDataSet2 = New shop.loginformDataSet2()
@@ -65,7 +63,6 @@ Partial Class Client
         Me.ClientBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClientTableAdapter1 = New shop.loginformDataSet3TableAdapters.ClientTableAdapter()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginformDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,8 +80,6 @@ Partial Class Client
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.TextBox5)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.TextBox2)
@@ -109,35 +104,15 @@ Partial Class Client
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Location = New System.Drawing.Point(21, 13)
+        Me.Panel1.Location = New System.Drawing.Point(138, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1156, 674)
+        Me.Panel1.Size = New System.Drawing.Size(1260, 806)
         Me.Panel1.TabIndex = 2
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(682, -2)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(102, 72)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 41
-        Me.PictureBox7.TabStop = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(790, 24)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(130, 23)
-        Me.Label10.TabIndex = 40
-        Me.Label10.Text = "Commande"
         '
         'TextBox5
         '
         Me.TextBox5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientBindingSource, "Nom", True))
-        Me.TextBox5.Location = New System.Drawing.Point(428, 334)
+        Me.TextBox5.Location = New System.Drawing.Point(549, 414)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(578, 32)
         Me.TextBox5.TabIndex = 39
@@ -156,7 +131,7 @@ Partial Class Client
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(287, 334)
+        Me.Label8.Location = New System.Drawing.Point(361, 414)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(123, 23)
         Me.Label8.TabIndex = 38
@@ -165,7 +140,7 @@ Partial Class Client
         'TextBox2
         '
         Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientBindingSource, "Nom", True))
-        Me.TextBox2.Location = New System.Drawing.Point(24, 135)
+        Me.TextBox2.Location = New System.Drawing.Point(167, 139)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(193, 32)
         Me.TextBox2.TabIndex = 37
@@ -174,7 +149,7 @@ Partial Class Client
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(20, 109)
+        Me.Label7.Location = New System.Drawing.Point(163, 113)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(30, 23)
         Me.Label7.TabIndex = 36
@@ -187,7 +162,7 @@ Partial Class Client
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(357, 432)
+        Me.DataGridView1.Location = New System.Drawing.Point(461, 547)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
@@ -229,7 +204,7 @@ Partial Class Client
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1118, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(1217, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(38, 33)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -240,7 +215,7 @@ Partial Class Client
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(514, 388)
+        Me.Label4.Location = New System.Drawing.Point(618, 503)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(108, 23)
         Me.Label4.TabIndex = 33
@@ -264,7 +239,7 @@ Partial Class Client
         Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(866, 262)
+        Me.BunifuThinButton24.Location = New System.Drawing.Point(993, 325)
         Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton24.Name = "BunifuThinButton24"
         Me.BunifuThinButton24.Size = New System.Drawing.Size(134, 42)
@@ -289,7 +264,7 @@ Partial Class Client
         Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(637, 262)
+        Me.BunifuThinButton23.Location = New System.Drawing.Point(764, 325)
         Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton23.Name = "BunifuThinButton23"
         Me.BunifuThinButton23.Size = New System.Drawing.Size(134, 42)
@@ -314,7 +289,7 @@ Partial Class Client
         Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton22.Location = New System.Drawing.Point(412, 262)
+        Me.BunifuThinButton22.Location = New System.Drawing.Point(539, 325)
         Me.BunifuThinButton22.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton22.Name = "BunifuThinButton22"
         Me.BunifuThinButton22.Size = New System.Drawing.Size(142, 42)
@@ -339,7 +314,7 @@ Partial Class Client
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(178, 262)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(305, 325)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(164, 41)
@@ -359,7 +334,7 @@ Partial Class Client
         'TextBox4
         '
         Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientBindingSource, "Adresse", True))
-        Me.TextBox4.Location = New System.Drawing.Point(736, 207)
+        Me.TextBox4.Location = New System.Drawing.Point(807, 224)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(351, 32)
         Me.TextBox4.TabIndex = 18
@@ -368,7 +343,7 @@ Partial Class Client
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(732, 172)
+        Me.Label6.Location = New System.Drawing.Point(875, 189)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(87, 23)
         Me.Label6.TabIndex = 17
@@ -377,7 +352,7 @@ Partial Class Client
         'TextBox3
         '
         Me.TextBox3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientBindingSource, "Téléphone", True))
-        Me.TextBox3.Location = New System.Drawing.Point(412, 207)
+        Me.TextBox3.Location = New System.Drawing.Point(555, 224)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(210, 32)
         Me.TextBox3.TabIndex = 16
@@ -386,7 +361,7 @@ Partial Class Client
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(408, 172)
+        Me.Label5.Location = New System.Drawing.Point(551, 189)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(113, 23)
         Me.Label5.TabIndex = 15
@@ -396,7 +371,7 @@ Partial Class Client
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(366, 24)
+        Me.Label1.Location = New System.Drawing.Point(529, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 23)
         Me.Label1.TabIndex = 14
@@ -409,7 +384,7 @@ Partial Class Client
         Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(601, 50)
+        Me.Panel2.Location = New System.Drawing.Point(764, 52)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(62, 7)
         Me.Panel2.TabIndex = 13
@@ -446,7 +421,7 @@ Partial Class Client
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(479, -1)
+        Me.PictureBox5.Location = New System.Drawing.Point(642, 1)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -456,7 +431,7 @@ Partial Class Client
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(479, 78)
+        Me.PictureBox3.Location = New System.Drawing.Point(548, 79)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(116, 54)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -466,7 +441,7 @@ Partial Class Client
         'TextBox1
         '
         Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientBindingSource, "Nom", True))
-        Me.TextBox1.Location = New System.Drawing.Point(115, 207)
+        Me.TextBox1.Location = New System.Drawing.Point(258, 224)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(167, 32)
         Me.TextBox1.TabIndex = 7
@@ -475,7 +450,7 @@ Partial Class Client
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(111, 172)
+        Me.Label3.Location = New System.Drawing.Point(254, 198)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 23)
         Me.Label3.TabIndex = 6
@@ -485,7 +460,7 @@ Partial Class Client
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(597, 24)
+        Me.Label2.Location = New System.Drawing.Point(760, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 23)
         Me.Label2.TabIndex = 5
@@ -494,7 +469,7 @@ Partial Class Client
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(249, -2)
+        Me.PictureBox2.Location = New System.Drawing.Point(412, 0)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -524,16 +499,16 @@ Partial Class Client
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Pink
-        Me.ClientSize = New System.Drawing.Size(1200, 718)
+        Me.ClientSize = New System.Drawing.Size(1553, 929)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Client"
         Me.Text = "Client"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LoginformDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -586,8 +561,6 @@ Partial Class Client
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label9 As Label

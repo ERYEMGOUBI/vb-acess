@@ -25,16 +25,8 @@ Partial Class FACTURATION
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FACTURATION))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.BillDGV = New System.Windows.Forms.DataGridView()
-        Me.IDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProduitDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrixDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.QuantitéDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FacturationBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LoginformDataSet12 = New shop.loginformDataSet12()
+        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.CltDGV = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -55,6 +47,8 @@ Partial Class FACTURATION
         Me.ProduitBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LoginformDataSet6 = New shop.loginformDataSet6()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -73,16 +67,14 @@ Partial Class FACTURATION
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.FacturationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LoginformDataSet9 = New shop.loginformDataSet9()
+        Me.FacturationBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LoginformDataSet12 = New shop.loginformDataSet12()
         Me.ProduitTableAdapter = New shop.loginformDataSet6TableAdapters.ProduitTableAdapter()
         Me.ClientTableAdapter = New shop.loginformDataSet7TableAdapters.ClientTableAdapter()
         Me.LoginformDataSet8 = New shop.loginformDataSet8()
-        Me.FacturationTableAdapter = New shop.loginformDataSet9TableAdapters.FacturationTableAdapter()
         Me.FacturationTableAdapter1 = New shop.loginformDataSet12TableAdapters.FacturationTableAdapter()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.FacturationTableAdapter = New shop.loginformDataSet9TableAdapters.FacturationTableAdapter()
         Me.Panel1.SuspendLayout()
-        CType(Me.BillDGV, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FacturationBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LoginformDataSet12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         CType(Me.CltDGV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,15 +88,16 @@ Partial Class FACTURATION
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FacturationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginformDataSet9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FacturationBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LoginformDataSet12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LoginformDataSet8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.BillDGV)
+        Me.Panel1.Controls.Add(Me.CrystalReportViewer1)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -114,95 +107,30 @@ Partial Class FACTURATION
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Location = New System.Drawing.Point(22, 12)
+        Me.Panel1.Location = New System.Drawing.Point(12, 13)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1156, 622)
+        Me.Panel1.Size = New System.Drawing.Size(1482, 863)
         Me.Panel1.TabIndex = 3
         '
-        'BillDGV
+        'CrystalReportViewer1
         '
-        Me.BillDGV.AutoGenerateColumns = False
-        Me.BillDGV.BackgroundColor = System.Drawing.Color.White
-        Me.BillDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BillDGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn2, Me.ProduitDataGridViewTextBoxColumn, Me.PrixDataGridViewTextBoxColumn1, Me.QuantitéDataGridViewTextBoxColumn1, Me.TotalDataGridViewTextBoxColumn})
-        Me.BillDGV.DataSource = Me.FacturationBindingSource1
-        Me.BillDGV.Location = New System.Drawing.Point(511, 106)
-        Me.BillDGV.Name = "BillDGV"
-        Me.BillDGV.RowHeadersVisible = False
-        Me.BillDGV.RowHeadersWidth = 51
-        Me.BillDGV.RowTemplate.Height = 24
-        Me.BillDGV.Size = New System.Drawing.Size(630, 224)
-        Me.BillDGV.TabIndex = 40
-        '
-        'IDDataGridViewTextBoxColumn2
-        '
-        Me.IDDataGridViewTextBoxColumn2.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn2.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.IDDataGridViewTextBoxColumn2.Name = "IDDataGridViewTextBoxColumn2"
-        Me.IDDataGridViewTextBoxColumn2.Width = 125
-        '
-        'ProduitDataGridViewTextBoxColumn
-        '
-        Me.ProduitDataGridViewTextBoxColumn.DataPropertyName = "Produit"
-        Me.ProduitDataGridViewTextBoxColumn.HeaderText = "Produit"
-        Me.ProduitDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ProduitDataGridViewTextBoxColumn.Name = "ProduitDataGridViewTextBoxColumn"
-        Me.ProduitDataGridViewTextBoxColumn.Width = 125
-        '
-        'PrixDataGridViewTextBoxColumn1
-        '
-        Me.PrixDataGridViewTextBoxColumn1.DataPropertyName = "Prix"
-        Me.PrixDataGridViewTextBoxColumn1.HeaderText = "Prix"
-        Me.PrixDataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.PrixDataGridViewTextBoxColumn1.Name = "PrixDataGridViewTextBoxColumn1"
-        Me.PrixDataGridViewTextBoxColumn1.Width = 125
-        '
-        'QuantitéDataGridViewTextBoxColumn1
-        '
-        Me.QuantitéDataGridViewTextBoxColumn1.DataPropertyName = "Quantité"
-        Me.QuantitéDataGridViewTextBoxColumn1.HeaderText = "Quantité"
-        Me.QuantitéDataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.QuantitéDataGridViewTextBoxColumn1.Name = "QuantitéDataGridViewTextBoxColumn1"
-        Me.QuantitéDataGridViewTextBoxColumn1.Width = 125
-        '
-        'TotalDataGridViewTextBoxColumn
-        '
-        Me.TotalDataGridViewTextBoxColumn.DataPropertyName = "Total"
-        Me.TotalDataGridViewTextBoxColumn.HeaderText = "Total"
-        Me.TotalDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.TotalDataGridViewTextBoxColumn.Name = "TotalDataGridViewTextBoxColumn"
-        Me.TotalDataGridViewTextBoxColumn.Width = 125
-        '
-        'FacturationBindingSource1
-        '
-        Me.FacturationBindingSource1.DataMember = "Facturation"
-        Me.FacturationBindingSource1.DataSource = Me.LoginformDataSet12
-        '
-        'LoginformDataSet12
-        '
-        Me.LoginformDataSet12.DataSetName = "loginformDataSet12"
-        Me.LoginformDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.CrystalReportViewer1.ActiveViewIndex = -1
+        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(560, 86)
+        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(900, 487)
+        Me.CrystalReportViewer1.TabIndex = 40
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(770, 66)
+        Me.Label9.Location = New System.Drawing.Point(1000, 49)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(85, 23)
         Me.Label9.TabIndex = 39
         Me.Label9.Text = "Facture"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(1018, 346)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(57, 23)
-        Me.Label8.TabIndex = 38
-        Me.Label8.Text = "Total"
         '
         'Panel4
         '
@@ -210,9 +138,9 @@ Partial Class FACTURATION
         Me.Panel4.Controls.Add(Me.Label7)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.ProduitDGV)
-        Me.Panel4.Location = New System.Drawing.Point(20, 397)
+        Me.Panel4.Location = New System.Drawing.Point(93, 651)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1121, 211)
+        Me.Panel4.Size = New System.Drawing.Size(1061, 176)
         Me.Panel4.TabIndex = 36
         '
         'CltDGV
@@ -379,6 +307,8 @@ Partial Class FACTURATION
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.TextBox5)
+        Me.Panel3.Controls.Add(Me.Label10)
         Me.Panel3.Controls.Add(Me.TextBox2)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.TextBox1)
@@ -388,14 +318,32 @@ Partial Class FACTURATION
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.TextBox4)
         Me.Panel3.Controls.Add(Me.BunifuThinButton21)
-        Me.Panel3.Location = New System.Drawing.Point(34, 106)
+        Me.Panel3.Location = New System.Drawing.Point(52, 134)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(425, 231)
+        Me.Panel3.Size = New System.Drawing.Size(487, 403)
         Me.Panel3.TabIndex = 35
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox5.Location = New System.Drawing.Point(375, 327)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox5.TabIndex = 36
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(279, 327)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(57, 23)
+        Me.Label10.TabIndex = 35
+        Me.Label10.Text = "Total"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(243, 58)
+        Me.TextBox2.Location = New System.Drawing.Point(283, 79)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 32)
         Me.TextBox2.TabIndex = 34
@@ -404,7 +352,7 @@ Partial Class FACTURATION
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(9, 23)
+        Me.Label3.Location = New System.Drawing.Point(19, 29)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 23)
         Me.Label3.TabIndex = 6
@@ -413,7 +361,7 @@ Partial Class FACTURATION
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(10, 58)
+        Me.TextBox1.Location = New System.Drawing.Point(23, 79)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(167, 32)
         Me.TextBox1.TabIndex = 7
@@ -422,7 +370,7 @@ Partial Class FACTURATION
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(239, 23)
+        Me.Label4.Location = New System.Drawing.Point(279, 29)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(95, 23)
         Me.Label4.TabIndex = 33
@@ -432,7 +380,7 @@ Partial Class FACTURATION
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(6, 107)
+        Me.Label5.Location = New System.Drawing.Point(19, 165)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(66, 23)
         Me.Label5.TabIndex = 15
@@ -441,7 +389,7 @@ Partial Class FACTURATION
         'TextBox3
         '
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(10, 142)
+        Me.TextBox3.Location = New System.Drawing.Point(23, 225)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(180, 32)
         Me.TextBox3.TabIndex = 16
@@ -450,7 +398,7 @@ Partial Class FACTURATION
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(239, 107)
+        Me.Label6.Location = New System.Drawing.Point(279, 165)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(41, 23)
         Me.Label6.TabIndex = 17
@@ -459,9 +407,9 @@ Partial Class FACTURATION
         'TextBox4
         '
         Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(243, 142)
+        Me.TextBox4.Location = New System.Drawing.Point(283, 225)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(155, 32)
+        Me.TextBox4.Size = New System.Drawing.Size(167, 32)
         Me.TextBox4.TabIndex = 18
         '
         'BunifuThinButton21
@@ -482,7 +430,7 @@ Partial Class FACTURATION
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(77, 183)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(6, 311)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(241, 41)
@@ -492,7 +440,7 @@ Partial Class FACTURATION
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1118, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(1441, -1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(38, 33)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -517,7 +465,7 @@ Partial Class FACTURATION
         Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(712, 339)
+        Me.BunifuThinButton24.Location = New System.Drawing.Point(981, 600)
         Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton24.Name = "BunifuThinButton24"
         Me.BunifuThinButton24.Size = New System.Drawing.Size(173, 42)
@@ -542,7 +490,7 @@ Partial Class FACTURATION
         Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(111, 346)
+        Me.BunifuThinButton23.Location = New System.Drawing.Point(75, 582)
         Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton23.Name = "BunifuThinButton23"
         Me.BunifuThinButton23.Size = New System.Drawing.Size(241, 42)
@@ -563,7 +511,7 @@ Partial Class FACTURATION
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(544, 26)
+        Me.Label1.Location = New System.Drawing.Point(622, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 23)
         Me.Label1.TabIndex = 14
@@ -573,7 +521,7 @@ Partial Class FACTURATION
         '
         Me.Panel2.BackColor = System.Drawing.Color.PaleVioletRed
         Me.Panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(548, 52)
+        Me.Panel2.Location = New System.Drawing.Point(626, 52)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(117, 7)
         Me.Panel2.TabIndex = 13
@@ -581,7 +529,7 @@ Partial Class FACTURATION
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(427, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(505, -1)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -598,6 +546,16 @@ Partial Class FACTURATION
         Me.LoginformDataSet9.DataSetName = "loginformDataSet9"
         Me.LoginformDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'FacturationBindingSource1
+        '
+        Me.FacturationBindingSource1.DataMember = "Facturation"
+        Me.FacturationBindingSource1.DataSource = Me.LoginformDataSet12
+        '
+        'LoginformDataSet12
+        '
+        Me.LoginformDataSet12.DataSetName = "loginformDataSet12"
+        Me.LoginformDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'ProduitTableAdapter
         '
         Me.ProduitTableAdapter.ClearBeforeFill = True
@@ -611,34 +569,29 @@ Partial Class FACTURATION
         Me.LoginformDataSet8.DataSetName = "loginformDataSet8"
         Me.LoginformDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'FacturationTableAdapter
-        '
-        Me.FacturationTableAdapter.ClearBeforeFill = True
-        '
         'FacturationTableAdapter1
         '
         Me.FacturationTableAdapter1.ClearBeforeFill = True
         '
-        'Timer1
+        'FacturationTableAdapter
         '
+        Me.FacturationTableAdapter.ClearBeforeFill = True
         '
         'FACTURATION
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1200, 647)
+        Me.ClientSize = New System.Drawing.Size(1506, 910)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FACTURATION"
         Me.Text = "FACTURATION"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.BillDGV, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FacturationBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LoginformDataSet12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.CltDGV, System.ComponentModel.ISupportInitialize).EndInit()
@@ -654,6 +607,8 @@ Partial Class FACTURATION
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FacturationBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LoginformDataSet9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FacturationBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LoginformDataSet12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LoginformDataSet8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -678,7 +633,6 @@ Partial Class FACTURATION
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents CltDGV As DataGridView
     Friend WithEvents Label7 As Label
@@ -702,16 +656,12 @@ Partial Class FACTURATION
     Friend WithEvents QuantitéDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LoginformDataSet8 As loginformDataSet8
     Friend WithEvents LoginformDataSet9 As loginformDataSet9
-    Friend WithEvents FacturationBindingSource As BindingSource
-    Friend WithEvents FacturationTableAdapter As loginformDataSet9TableAdapters.FacturationTableAdapter
-    Friend WithEvents BillDGV As DataGridView
     Friend WithEvents LoginformDataSet12 As loginformDataSet12
+    Friend WithEvents Label10 As Label
     Friend WithEvents FacturationBindingSource1 As BindingSource
     Friend WithEvents FacturationTableAdapter1 As loginformDataSet12TableAdapters.FacturationTableAdapter
-    Friend WithEvents IDDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents ProduitDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PrixDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents QuantitéDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents TotalDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents FacturationTableAdapter As loginformDataSet9TableAdapters.FacturationTableAdapter
+    Friend WithEvents FacturationBindingSource As BindingSource
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
 End Class

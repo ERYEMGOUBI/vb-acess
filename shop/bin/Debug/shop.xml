@@ -22,6 +22,201 @@ shop
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:shop.loginformDataSet13">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13.FacturationDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13.FacturationRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13.FacturationRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13TableAdapters.FacturationTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:shop.loginformDataSet13TableAdapters.TableAdapterManager.UpdateUpdatedRows(shop.loginformDataSet13,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet13TableAdapters.TableAdapterManager.UpdateInsertedRows(shop.loginformDataSet13,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet13TableAdapters.TableAdapterManager.UpdateDeletedRows(shop.loginformDataSet13,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet13TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:shop.loginformDataSet13TableAdapters.TableAdapterManager.UpdateAll(shop.loginformDataSet13)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:shop.loginformDataSet13TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14.ClientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14.ClientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14.ClientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14TableAdapters.ClientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:shop.loginformDataSet14TableAdapters.TableAdapterManager.UpdateUpdatedRows(shop.loginformDataSet14,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet14TableAdapters.TableAdapterManager.UpdateInsertedRows(shop.loginformDataSet14,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet14TableAdapters.TableAdapterManager.UpdateDeletedRows(shop.loginformDataSet14,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet14TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:shop.loginformDataSet14TableAdapters.TableAdapterManager.UpdateAll(shop.loginformDataSet14)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:shop.loginformDataSet14TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15.ProduitDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15.ProduitRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15.ProduitRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15TableAdapters.ProduitTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:shop.loginformDataSet15TableAdapters.TableAdapterManager.UpdateUpdatedRows(shop.loginformDataSet15,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet15TableAdapters.TableAdapterManager.UpdateInsertedRows(shop.loginformDataSet15,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet15TableAdapters.TableAdapterManager.UpdateDeletedRows(shop.loginformDataSet15,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:shop.loginformDataSet15TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:shop.loginformDataSet15TableAdapters.TableAdapterManager.UpdateAll(shop.loginformDataSet15)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:shop.loginformDataSet15TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 <member name="T:shop.loginformDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.

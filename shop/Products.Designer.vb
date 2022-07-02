@@ -118,9 +118,9 @@ Partial Class Products
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Location = New System.Drawing.Point(22, 12)
+        Me.Panel1.Location = New System.Drawing.Point(167, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1156, 622)
+        Me.Panel1.Size = New System.Drawing.Size(1257, 825)
         Me.Panel1.TabIndex = 1
         '
         'DataGridView1
@@ -131,7 +131,7 @@ Partial Class Products
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        Me.DataGridView1.Location = New System.Drawing.Point(265, 417)
+        Me.DataGridView1.Location = New System.Drawing.Point(270, 416)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
@@ -189,7 +189,7 @@ Partial Class Products
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(46, 86)
+        Me.TextBox2.Location = New System.Drawing.Point(164, 85)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(193, 32)
         Me.TextBox2.TabIndex = 39
@@ -198,7 +198,7 @@ Partial Class Products
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(42, 60)
+        Me.Label7.Location = New System.Drawing.Point(160, 59)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(30, 23)
         Me.Label7.TabIndex = 38
@@ -222,7 +222,7 @@ Partial Class Products
         Me.BunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton24.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton24.Location = New System.Drawing.Point(883, 246)
+        Me.BunifuThinButton24.Location = New System.Drawing.Point(888, 245)
         Me.BunifuThinButton24.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton24.Name = "BunifuThinButton24"
         Me.BunifuThinButton24.Size = New System.Drawing.Size(134, 42)
@@ -247,7 +247,7 @@ Partial Class Products
         Me.BunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton23.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton23.Location = New System.Drawing.Point(654, 246)
+        Me.BunifuThinButton23.Location = New System.Drawing.Point(659, 245)
         Me.BunifuThinButton23.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton23.Name = "BunifuThinButton23"
         Me.BunifuThinButton23.Size = New System.Drawing.Size(134, 42)
@@ -272,7 +272,7 @@ Partial Class Products
         Me.BunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton22.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton22.Location = New System.Drawing.Point(429, 246)
+        Me.BunifuThinButton22.Location = New System.Drawing.Point(434, 245)
         Me.BunifuThinButton22.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton22.Name = "BunifuThinButton22"
         Me.BunifuThinButton22.Size = New System.Drawing.Size(142, 42)
@@ -297,7 +297,7 @@ Partial Class Products
         Me.BunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BunifuThinButton21.IdleForecolor = System.Drawing.Color.White
         Me.BunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.BunifuThinButton21.Location = New System.Drawing.Point(195, 246)
+        Me.BunifuThinButton21.Location = New System.Drawing.Point(200, 245)
         Me.BunifuThinButton21.Margin = New System.Windows.Forms.Padding(6)
         Me.BunifuThinButton21.Name = "BunifuThinButton21"
         Me.BunifuThinButton21.Size = New System.Drawing.Size(164, 41)
@@ -307,7 +307,7 @@ Partial Class Products
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1118, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(1216, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(38, 33)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -329,7 +329,7 @@ Partial Class Products
         Me.ComboBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Première qualité", "2ème qualité", "3ème qualité"})
-        Me.ComboBox3.Location = New System.Drawing.Point(523, 358)
+        Me.ComboBox3.Location = New System.Drawing.Point(528, 357)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(187, 31)
         Me.ComboBox3.TabIndex = 22
@@ -340,7 +340,7 @@ Partial Class Products
         Me.ComboBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"Face Primer", "Liquid Foundation", "Setting Powder", " Blush", " Contour", "Highlighter", "Eyeshadow Palette", "Eyeliner", " Eyebrow Pencil", "Mascara", " Lipstick", " Setting Spray"})
-        Me.ComboBox4.Location = New System.Drawing.Point(315, 359)
+        Me.ComboBox4.Location = New System.Drawing.Point(320, 358)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(184, 31)
         Me.ComboBox4.TabIndex = 21
@@ -351,7 +351,7 @@ Partial Class Products
         Me.ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Première qualité", "2ème qualité", "3ème qualité"})
-        Me.ComboBox2.Location = New System.Drawing.Point(487, 183)
+        Me.ComboBox2.Location = New System.Drawing.Point(492, 182)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(154, 31)
         Me.ComboBox2.TabIndex = 20
@@ -362,7 +362,7 @@ Partial Class Products
         Me.ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Face Primer", "Liquid Foundation", "Setting Powder", " Blush", " Contour", "Highlighter", "Eyeshadow Palette", "Eyeliner", " Eyebrow Pencil", "Mascara", " Lipstick", " Setting Spray"})
-        Me.ComboBox1.Location = New System.Drawing.Point(279, 188)
+        Me.ComboBox1.Location = New System.Drawing.Point(284, 187)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(151, 31)
         Me.ComboBox1.TabIndex = 19
@@ -371,7 +371,7 @@ Partial Class Products
         'TextBox4
         '
         Me.TextBox4.ForeColor = System.Drawing.Color.Black
-        Me.TextBox4.Location = New System.Drawing.Point(952, 182)
+        Me.TextBox4.Location = New System.Drawing.Point(957, 181)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(167, 32)
         Me.TextBox4.TabIndex = 18
@@ -380,7 +380,7 @@ Partial Class Products
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(948, 147)
+        Me.Label6.Location = New System.Drawing.Point(953, 146)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(95, 23)
         Me.Label6.TabIndex = 17
@@ -389,7 +389,7 @@ Partial Class Products
         'TextBox3
         '
         Me.TextBox3.ForeColor = System.Drawing.Color.Black
-        Me.TextBox3.Location = New System.Drawing.Point(734, 182)
+        Me.TextBox3.Location = New System.Drawing.Point(739, 181)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(167, 32)
         Me.TextBox3.TabIndex = 16
@@ -398,7 +398,7 @@ Partial Class Products
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(730, 147)
+        Me.Label5.Location = New System.Drawing.Point(735, 146)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(41, 23)
         Me.Label5.TabIndex = 15
@@ -408,7 +408,7 @@ Partial Class Products
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(503, 26)
+        Me.Label1.Location = New System.Drawing.Point(508, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 23)
         Me.Label1.TabIndex = 14
@@ -418,7 +418,7 @@ Partial Class Products
         '
         Me.Panel2.BackColor = System.Drawing.Color.PaleVioletRed
         Me.Panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(507, 52)
+        Me.Panel2.Location = New System.Drawing.Point(512, 51)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(81, 7)
         Me.Panel2.TabIndex = 13
@@ -426,7 +426,7 @@ Partial Class Products
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(626, 0)
+        Me.PictureBox5.Location = New System.Drawing.Point(631, -1)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -438,7 +438,7 @@ Partial Class Products
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(475, 322)
+        Me.Label4.Location = New System.Drawing.Point(480, 321)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(166, 23)
         Me.Label4.TabIndex = 10
@@ -447,7 +447,7 @@ Partial Class Products
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(734, 358)
+        Me.PictureBox4.Location = New System.Drawing.Point(739, 357)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(54, 32)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -457,7 +457,7 @@ Partial Class Products
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(542, 78)
+        Me.PictureBox3.Location = New System.Drawing.Point(547, 77)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(108, 51)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -467,7 +467,7 @@ Partial Class Products
         'TextBox1
         '
         Me.TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.TextBox1.Location = New System.Drawing.Point(46, 182)
+        Me.TextBox1.Location = New System.Drawing.Point(164, 181)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(167, 32)
         Me.TextBox1.TabIndex = 7
@@ -476,7 +476,7 @@ Partial Class Products
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(42, 147)
+        Me.Label3.Location = New System.Drawing.Point(160, 146)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 23)
         Me.Label3.TabIndex = 6
@@ -486,7 +486,7 @@ Partial Class Products
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(734, 26)
+        Me.Label2.Location = New System.Drawing.Point(739, 25)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 23)
         Me.Label2.TabIndex = 5
@@ -495,7 +495,7 @@ Partial Class Products
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(386, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(391, -1)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 72)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -563,13 +563,14 @@ Partial Class Products
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1200, 647)
+        Me.ClientSize = New System.Drawing.Size(1785, 861)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Products"
         Me.Text = "Products"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
